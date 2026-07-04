@@ -1,0 +1,258 @@
+body{
+    background-color: #f4f4f4;
+    color:#333;
+    font-family: arial, sans-serif;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+}
+header{
+    display: flex;
+    background-color: #222;
+    color: white;
+    padding:30px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    margin: 0;
+}
+section{
+    align-items: flex-start;
+    margin: 20px 0;
+    padding:20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+
+}
+.presentation img{
+    border-radius:50%;
+    width: 150px;
+
+}
+nav{
+    display: flex;
+    background-color: #ddd;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover{
+    color:#007bff
+}
+@media (max-width: 768px){
+   nav{
+    flex-direction: column;
+    align-items: center;
+   }
+   h1{
+    font-size: 22px;
+   }
+   p{
+    font-size: 14px;
+   }
+   img{
+    width: 100px;
+   }
+   section{
+    padding:15px
+   }
+   .presentation{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+   }
+   section p{
+        line-height: 1.6;
+   }
+   .projets{
+    flex-direction: column;
+   }
+}
+.presentation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+th{
+    background-color: #f0f0f0;
+}
+button{
+    background-color: #007bff;
+    color:white; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    background-color: #0056b3;
+}
+form{
+    width: 100%;
+}
+input,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+form div{
+    margin-bottom: 10px;
+}
+.projets{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.carte{
+    flex: 1;
+    background: #f9f9f9;
+    padding:15px;
+    border-radius: 8px;
+    transition:transform 0.3s ease;
+}
+.carte:hover{
+    transform: scale(1.05);
+}
+input:focus, textarea:focus{
+    outline: 2px solid #007bff;
+}
+p{
+    list-style: 1.6;
+}
+.todo-container {
+    display: flex;
+    gap: 10px;
+}
+
+#taskList {
+    margin-top: 20px;
+    padding: 0;
+}
+
+#taskList li {
+    list-style: none;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section h2 {
+    color : #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+}
+.carte {
+    min-width: 200px;
+}
+.carte h3{
+  color: #007bff;
+  margin-bottom: 8px;
+}
+.diplomes ul {
+    list-style: none;
+    padding: 0;
+}
+.diplomes li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+.diplomes li::before {
+    content: " ";
+
+}
+ 
+#Competences ul {
+ list-style: none;
+ padding: 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+#Competences li {
+    background: #007bff;
+    color : white;
+    padding : 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #f2efef;
+    margin-top: 40px;
+}
+#menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color:#333;
+    cursor:pointer;
+    width: auto;
+    padding:5px 10px;
+}
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav a {
+        display: none;
+    }
+    #menuBtn {
+        display: block;
+    }
+    nav.ouvert {
+        flex-wrap: column;
+        align-items: center;
+    }
+    nav.ouvert a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.section-cachee {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-cachee.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact-infos {
+    margin-bottom: 20px;
+}
+
+.contact-infos a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-infos a:hover {
+    text-decoration: underline;
+}

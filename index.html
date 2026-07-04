@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>ADEFOULOU Phanouel Mahutin</h1>
+            <p>
+                Etudiant en IA & Développement web.
+            </p>
+        </header>
+            <nav>
+                <a href="#presentation">Accueil</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+                <button id="menuBtn">☰</button>
+            </nav>
+        <main>
+            <section id="presentation" class="presentation section-cachee">
+                <img src="img/WhatsApp Image 2026-07-04 at 10.13.30.jpeg " alt="Photo">
+                <div>
+                    <h2>A propos de moi</h2>   
+                    <p>Passionné par le code et les technologies qui façonnent demain, je me forme activement au développement web et
+                        à l'intelligence artificielle. Mon terrain de jeu : Python pour explorer la data et l'IA, 
+                        HTML/CSS pour construire des interfaces soignées, et JavaScript pour leur donner vie.
+                        Ce qui me motive, c'est cette capacité du code à transformer une idée en quelque chose de réel et d'utile.
+                        Chaque projet est une occasion d'apprendre, d'expérimenter et de repousser mes limites.
+                        Encore en formation, mais déjà déterminé — je cherche à contribuer, à collaborer et
+                        à grandir aux côtés de personnes et de projets ambitieux.
+                    </p>
+
+                    <button id="toggleBtn">Afficher plus</button>
+                    <p id="extraText">
+                        ceci est un texte caché qui apparait avec javaScript
+                    </p>
+                    <p id="status">statut: disponible</p>
+                    <button id="statusBtn">Changer statut</button>
+                </div>
+            </section>
+            <section id="competences" class="section-cachee">    
+                    <h2>Compétences</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Git</li>
+                        
+                    </ul>
+            </section>
+            <section id="diplomes" class="diplomes section-cachee">
+                <h2>diplomes</h2>
+                <ul>
+                    <li>2014-2015: Certificat d'étude primaire(CEP)</li>
+                    <li>2018-2019: Brevet d'étude du premier cycle(BEPC)</li>
+                    <li>2022-2023: Baccalauréat(BAC)</li>
+                    <li>Depuis 2012: Ecole du ministère théocratique(Art oratoire)</li>
+                    <li>2024-2025: Certification sololearn en SQL</li>
+                </ul>
+            </section>
+
+            <section id="projets" class="section-cachee">
+                    <h2>Projets</h2>
+                        <div class="projets">
+                            <div class="carte">
+                                <h3>Portfolio</h3>
+                                <p>site personnel en HTML/CSS</p>
+                            </div>
+                            <div class="carte">
+                                <h3>AG-alerte Bénin en cour de production</h3>
+                                <p>Application python</p>
+                            </div>
+                            <div class="carte">
+                                <h3>App météo</h3>
+                                <p>Projet React</p>
+                            </div>
+                            <div class="carte">
+                                <h3>projet intégrateur IFRI_Comotorage</h3>
+                                <p>Développement d'une application de convoiturage dans le cadre d'un projet académique.</p>
+                            </div>
+                            <div class="carte">
+                                <h3>Projet médipass(poo)</h3>
+                                <p>Création d'une application médicale visant a assurer un suivi des patients d'un centre de santé a un autre.
+                                    cadre: Académique
+                                </p>
+                            </div>
+                            <div class="carte">
+                                <h3>ifri_mini_ml_lib</h3>
+                                  <p>amélioration d'une bibliothèque local par la mise en place d'un notebook explicatif sur les méthodes de
+                                     normalisation et de standarisation.
+            
+                                  </p>  
+                            </div>
+
+
+                        
+                        </div>
+            </section>
+            
+            <section id="contact" class="section-cachee">
+                <h2>Contact</h2>
+                    <form id="contactForm">
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email"name="email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <div class="contact-infos">
+                        <p><a href="mail to: phanouelmahutin@gmail.com">phanouelmahutin@gmail.com</a></p>
+                        <p><a href="https://github.com/ADEFOULOU-Phanouel" target="_rel">github</a></p>
+
+                    </div>
+            </section>
+            <section id="todo" class="section-cachee">
+    <h2>Ma To-Do List</h2>
+
+    <div class="todo-container">
+
+        <input type="text" id="taskInput" placeholder="Ajouter une tâche">
+
+        <button id="addTaskBtn">
+            Ajouter
+        </button>
+
+    </div>
+
+    <ul id="taskList"></ul>
+</section>
+        </main>
+    <footer >
+      <p>© 2026 Phanouel</p>  
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
